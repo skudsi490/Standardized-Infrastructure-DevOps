@@ -80,7 +80,7 @@ You also need to set several other configurations for your project to work corre
     
 - **Security Group ID**:
     
-    ``
+    ```
     pulumi config set service-directory:securityGroupId sg-EXAMPLEID
     
     ```
