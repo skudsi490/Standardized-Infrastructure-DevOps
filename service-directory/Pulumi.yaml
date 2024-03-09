@@ -1,0 +1,7 @@
+name: service-directory
+runtime: nodejs
+description: cc
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-typescript
