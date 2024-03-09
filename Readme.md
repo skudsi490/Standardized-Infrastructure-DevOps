@@ -38,16 +38,14 @@ Use the following commands to securely set your AWS access and secret keys. Thes
 
 - **AWS Access Key**:
     
-    ```arduino
-    arduinoCopy code
+    ```
     pulumi config set aws:accessKey YOUR_ACCESS_KEY --secret
     
     ```
     
 - **AWS Secret Key**:
     
-    ```arduino
-    arduinoCopy code
+    ```
     pulumi config set aws:secretKey YOUR_SECRET_KEY --secret
     
     ```
@@ -61,32 +59,28 @@ You also need to set several other configurations for your project to work corre
 
 - **AWS Region**:
     
-    ```arduino
-    arduinoCopy code
+    ```
     pulumi config set aws:region eu-central-1
     
     ```
     
 - **ECS Task Execution Role ARN**:
     
-    ```ruby
-    rubyCopy code
+    ```
     pulumi config set service-directory:ecsTaskExecutionRoleArn arn:aws:iam::YOUR_AWS_ACCOUNT_ID:role/ecsTaskExecutionRole
     
     ```
     
 - **Subnets**:
     
-    ```arduino
-    arduinoCopy code
+    ```
     pulumi config set service-directory:subnets '["subnet-EXAMPLEID1", "subnet-EXAMPLEID2"]'
     
     ```
     
 - **Security Group ID**:
     
-    ```arduino
-    arduinoCopy code
+    ``
     pulumi config set service-directory:securityGroupId sg-EXAMPLEID
     
     ```
@@ -98,8 +92,7 @@ Replace **`YOUR_AWS_ACCOUNT_ID`**, **`subnet-EXAMPLEID1`**, **`subnet-EXAMPLEID2
 
 After setting the configurations using the commands above, your **`Pulumi.dev.yaml`** should look something like this:
 
-```yaml
-yamlCopy code
+```
 config:
   aws:accessKey:
     secure: <encrypted-value>
