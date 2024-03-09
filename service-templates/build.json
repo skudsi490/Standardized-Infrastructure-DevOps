@@ -1,0 +1,18 @@
+{
+  "services": [
+    {
+      "name": "frontend-service",
+      "serviceType": "frontend",
+      "buildCommands": ["npm run build"],
+      "testCommands": ["npm run test"],
+      "deployCommands": ["npm run deploy"]
+    },
+    {
+      "name": "backend-service",
+      "serviceType": "backend",
+      "buildCommands": ["dotnet build"],
+      "testCommands": ["dotnet test"],
+      "deployCommands": ["dotnet publish"]
+    }
+  ]
+}

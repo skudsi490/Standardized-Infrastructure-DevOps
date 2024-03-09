@@ -1,0 +1,25 @@
+version: 2.1
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+jobs:
+  build:
+    docker:
+      - image: cimg/node:14.17
+    steps:
+      - checkout
+      - run: npm install
+      {% for command in testCommands %}
+      - run: {{ command }}
+      {% endfor %}
+  test:
+    docker:
+      - image: cimg/node:14.17
+    steps:
+      - checkout
+      - run: npm test
