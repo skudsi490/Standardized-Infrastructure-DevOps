@@ -6,7 +6,7 @@
 
 The service-templates module is a CLI tool designed to standardize the creation of Docker and CircleCI configuration files for services within our infrastructure. This tool leverages templates and a JSON configuration file to generate customized Dockerfiles and CircleCI configuration files, simplifying the process for developers and ensuring consistency across services.
 
-![Diagram Photo](service-templates/diagram.png)
+![Diagram Photo](https://github.com/skudsi490/Standardized-Infrastructure-DevOps/blob/main/service-templates/diagram.png)
 
 ## **Installation**
 
